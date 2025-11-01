@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratilac Linija</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Globalni Dark Mode stilovi */
+:root {
+    --dark-bg: #E0E0E0; /* Jako tamna pozadina */
+    --dark-surface: #B0B0B0; /* Tamnija pozadina za elemente (karte, navigacija) */
+    --text-primary: #121212; /* Svetli tekst */
+    --text-secondary: #B0B0B0; /* Sekundarni tekst */
+    --accent-color: #03DAC6; /* Akcentna/naglašena boja (tirkizna - moderna) */
+    --accent-hover: #03A9A4; /* Tamnija verzija naglašene boje */
+    --border-color: #333333;
+    --font-stack: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-primary);
+    font-family: var(--font-stack);
+    line-height: 1.6;
+    min-height: 100vh; /* Osigurava da je telo stranice visoko barem ceo viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tipografija */
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+/* Glavni kontejner i centriranje */
+.content-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto; /* Centriranje glavnog sadržaja */
+    padding-top: 80px; /* Dovoljno prostora ispod fiksne navigacije */
+    flex-grow: 1;
+}
+
+/* Sekcija "Hero" (Naslovni deo) */
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 3rem;
+}
+
+/* Lista linkova (Card-Based Design) */
+.main-links {
+    padding-bottom: 3rem;
+}
+
+.link-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responzivni raspored kartica */
+    gap: 1.5rem;
+}
+
+.link-card {
+    display: block;
+    padding: 1.5rem;
+    background-color: var(--dark-surface);
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 600;
+    border-left: 5px solid var(--accent-color); /* Vertikalna akcentna linija */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Blaga senka */
+}
+
+.link-card:hover {
+    transform: translateY(-5px); /* Blago podizanje na hover */
+    background-color: #2a2a2a; /* Malo svetlija površina na hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+    color: var(--accent-color);
+}
+    </style>
+</head>
+<body>
+<main class="content-container">
+        <section class="main-links">
+            <h1>Izbor linije</h1>
+            <div class="link-list">
+                <a href="56.html" class="link-card">56</a>
+                <a href="65.html" class="link-card">65</a>
+                <a href="74.html" class="link-card">74</a>
+                <a href="77.html" class="link-card">77</a>
+                <a href="83.html" class="link-card">83</a>
+                <a href="85.html" class="link-card">85</a>
+                <a href="88.html" class="link-card">88</a>
+                <a href="95.html" class="link-card">95</a>
+                <a href="511.html" class="link-card">511</a>
+                <a href="601.html" class="link-card">601</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
